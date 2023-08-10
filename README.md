@@ -10,6 +10,7 @@ Este projeto analisa e compara a eficiência de diferentes algoritmos de busca, 
 - [Algoritmos de Busca](#-algoritmos-de-busca)
 - [Medição de Performance](#-medição-de-performance)
 - [Testes em RAM vs. Disco](#-testes-em-ram-vs-disco)
+- [Tratamento de Erros](#-tratamento-de-erros)
 - [Salvando Resultados](#-salvando-resultados)
 - [Como Usar](#-como-usar)
 
@@ -20,6 +21,7 @@ O projeto foi desenvolvido para avaliar a eficiência de algoritmos de busca em 
 ## 📦 Dependências
 
 - **Numpy**: Uma biblioteca em Python usada para operações matemáticas e manipulação de arrays. No projeto, é usada para criar e manipular arrays, bem como para ler e escrever dados em arquivos no formato binário.
+- **JSON**: Usado para salvar os resultados dos testes em um formato legível e estruturado.
 
 ## 📚 Estrutura de Dados
 
@@ -42,6 +44,10 @@ O projeto foi desenvolvido para avaliar a eficiência de algoritmos de busca em 
 - **Testes em RAM**: Os algoritmos de busca são aplicados diretamente aos arrays criados na memória RAM.
   
 - **Testes em Disco**: Os dados do array são primeiro escritos em um arquivo no formato binário. Os algoritmos de busca são então aplicados ao arquivo, lendo os dados diretamente do disco.
+
+## 🛠 Tratamento de **__Erros__**
+
+- **Elemento Não Encontrado**: Se o elemento não for encontrado, o programa retorna -1 e informa ao usuário que o elemento não foi encontrado, indicando que foi o pior caso.
 
 ## 📂 Salvando Resultados
 
